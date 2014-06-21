@@ -1,0 +1,16 @@
+{
+  "name": "combo-breaker",
+  "description": "Break consecutive repetition of a string in Node.js and browsers.",
+  "version": "0.0.0",
+  "author": "Nizar Khalife Iglesias <khalifenizar@gmail.com>",
+  "keywords": [
+    "break",
+    "consecutive",
+    "repetition",
+    "string",
+    "repeat",
+    "combo"
+  ],
+  "license": "ISC",
+  "main": "index.js"
+}
