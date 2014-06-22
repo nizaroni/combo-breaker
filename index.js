@@ -9,7 +9,11 @@ function comboBreaker (str, combo, options) {
     ;
 
     options = options || {};
-    keep = options.keep || 1;
+    keep = +options.keep;
+
+    if (isNaN(keep)) {
+        keep = 1;
+    }
 
     leftOver = '';
     for (count = 0; count < keep; count += 1) {
