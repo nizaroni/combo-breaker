@@ -3,12 +3,16 @@
   "description": "Break consecutive repetition of a string in Node.js and browsers.",
   "version": "0.0.0",
   "author": "Nizar Khalife Iglesias <khalifenizar@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/khalifenizar/combo-breaker/issues"
+  },
   "dependencies": {
     "quotemeta": "0.0.0"
   },
   "devDependencies": {
     "tape": "^2.13.3"
   },
+  "homepage": "https://github.com/khalifenizar/combo-breaker",
   "keywords": [
     "break",
     "consecutive",
@@ -19,6 +23,10 @@
   ],
   "license": "ISC",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:khalifenizar/combo-breaker.git"
+  },
   "scripts": {
     "test": "node tests/combo-breaker.js"
   }
