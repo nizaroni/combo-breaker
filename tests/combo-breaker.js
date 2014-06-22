@@ -13,9 +13,17 @@ tape('combo breaking', function (t) {
 });
 
 tape('`options.keep`', function (t) {
-    broken = comboBreaker(redundant, 'really ', { keep: 2 });
-    t.equal(broken, 'I really really love pizza.');
-    t.end();
+    t.test('├─ > 1', function (t) {
+        broken = comboBreaker(redundant, 'really ', { keep: 2 });
+        t.equal(broken, 'I really really love pizza.');
+        t.end();
+    });
+
+    t.test('└─ 0', function (t) {
+        broken = comboBreaker(redundant, 'really ', { keep: 0 });
+        t.equal(broken, 'I love pizza.');
+        t.end();
+    });
 });
 
 tape('escaping of regex characters', function (t) {
