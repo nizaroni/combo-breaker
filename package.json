@@ -3,6 +3,9 @@
   "description": "Break consecutive repetition of a string in Node.js and browsers.",
   "version": "0.0.0",
   "author": "Nizar Khalife Iglesias <khalifenizar@gmail.com>",
+  "dependencies": {
+    "quotemeta": "0.0.0"
+  },
   "devDependencies": {
     "tape": "^2.13.3"
   },

@@ -1,3 +1,5 @@
+var quotemeta = require('quotemeta');
+
 function comboBreaker (str, combo, options) {
     var leftOver,
         pattern,
@@ -14,7 +16,7 @@ function comboBreaker (str, combo, options) {
         leftOver += combo;
     }
 
-    pattern = leftOver + '(' + combo + ')+';
+    pattern = quotemeta(leftOver) + '(' + quotemeta(combo) + ')+';
     regex = new RegExp(pattern, 'g');
 
     return str.replace(regex, leftOver);
